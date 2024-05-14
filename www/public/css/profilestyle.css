@@ -1,0 +1,131 @@
+.profile-header {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #dee2e6; 
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px; 
+    object-fit: cover; 
+    margin-right: 20px; 
+}
+
+.profile-info {
+    flex-grow: 1; 
+}
+
+.profile-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f8f9fa; 
+    color: #333; 
+    border-radius: 5px;
+    border: none;
+}
+
+.profile-tab.active {
+    background-color: #007bff; 
+    color: white;
+}
+
+
+.profile-content {
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.followers-list, .following-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.follower-item, .following-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+
+.user-info {
+    flex-grow: 1;
+}
+
+.follow-button, .unfollow-button {
+    padding: 5px 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.follow-button:hover {
+    background-color: #007bff;
+}
+
+.unfollow-button:hover {
+    background-color: red;
+}
+
+.follow-back-indicator {
+    font-size: 0.8rem;
+    color: #28a745; 
+    margin-top: 2px;
+}
+
+#editProfileForm {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+#editProfileForm div {
+    margin-bottom: 10px;
+}
+
+#editProfileForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#editProfileForm input[type="text"],
+#editProfileForm input[type="email"],
+#eeditProfileForm textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+#editProfileForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+}
+
+#editProfileForm button:hover {
+    background-color: #0056b3;
+}
